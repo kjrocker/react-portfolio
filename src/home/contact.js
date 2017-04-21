@@ -16,9 +16,9 @@ class ContactInfo extends Component {
   render() {
     const urls = {
       gmail: "mailto:kevin.j.rocker@gmail.com",
-      github: "https://www.github.com",
+      github: "https://github.com/kjrocker",
       twitter: 'https://www.twitter.com',
-      linkedin: 'https://www.linkedin.com'
+      linkedin: 'https://www.linkedin.com/in/kevin-rocker/'
     }
     return (
       <div className="col-sm-4">
@@ -31,7 +31,6 @@ class ContactInfo extends Component {
           <strong>Online Presence</strong><br/>
           <ContactIcon image='icon_github.png' title='Github' url={urls.github}/>
           <ContactIcon image='icon_gmail.png' title='Github' url={urls.gmail}/>
-          <ContactIcon image='icon_twitter.png' title='Github' url={urls.twitter}/>
           <ContactIcon image='icon_linkedin.png' title='Github' url={urls.linkedin}/>
         </address>
       </div>

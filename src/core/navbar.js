@@ -12,7 +12,6 @@ const Navbar = (props) => (
   <nav style={navbarStyle} className="navbar navbar-inverse navbar-fixed-top">
     <div className='container-fluid'>
       <ul className="nav navbar-nav">
-        <li>Title Goes Here!</li>
       </ul>
       <ul className="nav navbar-nav navbar-right">
         <li><Link to='/'>Home</Link></li>

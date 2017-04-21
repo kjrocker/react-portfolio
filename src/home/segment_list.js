@@ -19,7 +19,7 @@ class SegmentList extends Component {
   }
 
   chosenSegmentKeys = (allSegments) => {
-    return _.sampleSize(Object.keys(allSegments), 3).sort()
+    return _.sampleSize(Object.keys(allSegments), 3)
   }
 
   render() {
