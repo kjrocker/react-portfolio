@@ -1,12 +1,3 @@
-const profile = `
-I am a former student of UNC Chapel Hill and Consultant at Levvel, LLC. I have naturally
-migrated to software and programming in every position I have ever held, including in
-biology research and a clinical laboratory. Along the way, I have supplemented my skills
-through explorations of science, mathematics, and logical reasoning. I am currently focused
-on enterprise web development, especially on database design and creating effective,
-maintainable code while addressing the ever-changing needs of clients.
-`
-
 const levvel = `
 **Levvel, LLC**\n
 Contractor/Consultant (September 2016 - April 2017)
@@ -18,7 +9,7 @@ Worked with clients to create effective, maintainable software solutions address
 `
 
 const pcls = `
-**Physician's Choice Laborator Services**\n
+**Physician's Choice Laboratory Services**\n
 QC Analyst (Summer 2012 - July 2016)
 
 Responsible for a broad array of services within the QC department, including instrument maintenance and data analysis. Developed automation tools using Excel and VBA to increase department productivity.
@@ -40,7 +31,6 @@ Managed my own research project, involving analysis of genotype data to meet bro
 `
 
 const Markdown = {
-  profile,
   levvel,
   pcls,
   unc

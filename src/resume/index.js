@@ -1,14 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
+import Profile from './profile'
 import Content from './markdown'
-
-const Profile = (props) => (
-  <div className="row">
-    <div className="col-md-2">Profile:</div>
-    <div className="col-md-10"><ReactMarkdown source={ Content.profile }/></div>
-  </div>
-)
 
 const JobHistory = (props) => (
   <div>
