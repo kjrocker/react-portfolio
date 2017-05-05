@@ -11,7 +11,7 @@ const headerStyle = {
 
 const titleStyle = {
   textShadow: '0 0 10px #000',
-  color: '#fff'
+  color: '#f0f0f0'
 }
 
 const HomeHeader = (props) => (

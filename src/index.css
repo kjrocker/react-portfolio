@@ -1,9 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Slabo+27px);
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Slado 27px", serif;
   font-size: 16px;
   background-color: #f0f0f0;
-  color: #0f0f0f;
+}
+
+.App {
   padding-top: 60px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  color: #0f0f0f;
 }
