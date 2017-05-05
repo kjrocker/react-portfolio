@@ -29,7 +29,7 @@ class ProjectList extends Component {
   }
 
   projectRows = (projects) => {
-    return _.chunk(Object.values(projects), 3)
+    return _.chunk(Object.values(projects).filter((p) => p.visible), 3)
   }
 
   render() {

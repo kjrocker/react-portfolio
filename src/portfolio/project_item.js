@@ -5,7 +5,10 @@ class ProjectItem extends Component {
     const { project } = this.props
     return (
       <div className="col-sm-4">
-        <h2>{ project.title }</h2>
+        <div className="text-center">
+          <img src={ project.imageUrl || 'project_placeholder.png' } className="img-responsive rounded" alt={ project.title }/>
+        </div>
+        <h2>{ project.title }  <small><a href={ project.sourceUrl } target="_blank">(Source)</a></small></h2>
         <p>{ project.body }</p>
       </div>
     )
