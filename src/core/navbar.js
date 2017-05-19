@@ -15,6 +15,7 @@ const Navbar = (props) => (
       </ul>
       <ul className="nav navbar-nav navbar-right">
         <li><Link to='/'>Home</Link></li>
+        <li><Link to='/portfolio'>Projects</Link></li>
         <li><Link to='/resume'>Resume</Link></li>
       </ul>
     </div>
