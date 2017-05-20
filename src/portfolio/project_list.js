@@ -1,8 +1,7 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { firebaseConnect, isLoaded, isEmpty, dataToJS } from 'react-redux-firebase'
+import React, { Component } from 'react';
 import _ from 'lodash';
 
+import { pipe, connectToFirebase } from '../helpers';
 import ProjectItem from './project_item';
 
 const transformProjects = (projects) => Object.values(projects)
@@ -24,13 +23,13 @@ class ProjectList extends Component {
     super(props)
 
     this.state = {
-      filterFn: _.flow([transformProjects, filterProjects, chunkProjects])
+      filterFn: pipe(transformProjects, filterProjects, chunkProjects)
     }
   }
 
   render() {
-    const { projects } = this.props
-    const listBody = (!isLoaded(projects) || isEmpty(projects)) ? "Loading..." :
+    const { projects } = this.props.data
+    const listBody =
       this.state.filterFn(projects).map((p, i) => (
         <ProjectRow key={i} projects={p}/>
       ))
@@ -42,13 +41,4 @@ class ProjectList extends Component {
   }
 }
 
-
-const connectedList = firebaseConnect([
-  '/projects'
-])(ProjectList)
-
-export default connect(
-  ({ firebase }) => ({
-    projects: dataToJS(firebase, 'projects'),
-  })
-)(connectedList)
+export default connectToFirebase()(ProjectList);
