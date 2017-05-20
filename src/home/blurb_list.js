@@ -4,9 +4,9 @@ import _ from 'lodash';
 import { connectToFirebase } from '../helpers'
 import Blurb from './blurb';
 
-const EmptyBlurbList = (props) => (
-  <div className="row col-md-12 text-center">Loading...</div>
-)
+// const EmptyBlurbList = (props) => (
+//   <div className="row col-md-12 text-center">Loading...</div>
+// )
 
 class BlurbList extends Component {
   render() {
@@ -21,4 +21,4 @@ class BlurbList extends Component {
   }
 }
 
-export default connectToFirebase(BlurbList, 'blurbs');
+export default connectToFirebase()(BlurbList);

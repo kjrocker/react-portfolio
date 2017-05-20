@@ -21,3 +21,21 @@ body {
   flex: 1;
   color: #0f0f0f;
 }
+
+.firebase-enter {
+  opacity: 0.01;
+}
+
+.firebase-enter.firebase-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.firebase-leave {
+  opacity: 1;
+}
+
+.firebase-leave.firebase-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
