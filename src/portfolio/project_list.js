@@ -5,41 +5,43 @@ import _ from 'lodash';
 
 import ProjectItem from './project_item';
 
+const transformProjects = (projects) => Object.values(projects)
+const filterProjects = (projects) => projects.filter(p => p.visible)
+const chunkProjects = (projects) => _.chunk(projects, 3)
+
 class ProjectRow extends Component {
   render() {
     return (
       <div className="row">
-        { this.props.projects.map((project, i) => (<ProjectItem key={i} project={project}/>)) }
+        { this.props.projects.map((project, i) => <ProjectItem key={i} project={project}/>) }
       </div>
     )
   }
 }
 
 class ProjectList extends Component {
-  listBody = (projects) => {
-    if (!isLoaded(projects)) {
-      return 'Loading'
-    } else if (isEmpty(projects)) {
-      return 'No Items!'
-    } else {
-      return this.projectRows(projects).map((p, i) => (
-        <ProjectRow key={i} projects={p}/>
-      ))
+  constructor(props){
+    super(props)
+
+    this.state = {
+      filterFn: _.flow([transformProjects, filterProjects, chunkProjects])
     }
   }
 
-  projectRows = (projects) => {
-    return _.chunk(Object.values(projects).filter((p) => p.visible), 3)
-  }
-
   render() {
+    const { projects } = this.props
+    const listBody = (!isLoaded(projects) || isEmpty(projects)) ? "Loading..." :
+      this.state.filterFn(projects).map((p, i) => (
+        <ProjectRow key={i} projects={p}/>
+      ))
     return (
       <div>
-        { this.listBody(this.props.projects) }
+        { listBody }
       </div>
     )
   }
 }
+
 
 const connectedList = firebaseConnect([
   '/projects'

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SegmentList from './segment_list';
+import BlurbList from './blurb_list';
 import HomeHeader from './header';
 import Biography from './biography'
 import ContactInfo from './contact'
@@ -12,7 +12,7 @@ const Home = (props) => (
         <Biography/>
         <ContactInfo/>
       </div>
-      <SegmentList/>
+      <BlurbList/>
     </div>
   </div>
 )

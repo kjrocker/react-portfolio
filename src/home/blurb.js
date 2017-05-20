@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Segment extends Component {
+class Blurb extends Component {
   shouldComponentUpdate() {
     return false
   }
@@ -8,11 +8,11 @@ class Segment extends Component {
   render() {
     return (
       <div className="col-sm-4">
-        <h2>{ this.props.segment.title }</h2>
-        <p>{ this.props.segment.body }</p>
+        <h2>{ this.props.blurb.title }</h2>
+        <p>{ this.props.blurb.body }</p>
       </div>
     )
   }
 }
 
-export default Segment;
+export default Blurb;
