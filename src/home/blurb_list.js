@@ -1,17 +1,19 @@
 import React, { Component } from 'react'
 import _ from 'lodash';
 
-import { connectToFirebase } from '../helpers'
+import { connectToDatabase } from '../helpers'
 import Blurb from './blurb';
 
-// const EmptyBlurbList = (props) => (
-//   <div className="row col-md-12 text-center">Loading...</div>
-// )
+const EmptyBlurbList = (props) => (
+  <div className="row col-md-12 text-center">Loading...</div>
+)
 
 class BlurbList extends Component {
   render() {
     const { blurbs } = this.props.data
-    const blurbList = blurbs.map((s, i) => <Blurb key={i} blurb={s}/>)
+    const blurbList = blurbs.length === 0
+      ? <EmptyBlurbList/>
+      : blurbs.map((s, i) => <Blurb key={i} blurb={s}/>)
 
     return (
       <div className="row">
@@ -21,4 +23,4 @@ class BlurbList extends Component {
   }
 }
 
-export default connectToFirebase()(BlurbList);
+export default connectToDatabase('blurbs')(BlurbList);

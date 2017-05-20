@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 
-import { pipe, connectToFirebase } from '../helpers';
+import { pipe, connectToDatabase } from '../helpers';
 import ProjectItem from './project_item';
 
 const transformProjects = (projects) => Object.values(projects)
@@ -41,4 +41,4 @@ class ProjectList extends Component {
   }
 }
 
-export default connectToFirebase()(ProjectList);
+export default connectToDatabase('projects')(ProjectList);
