@@ -1,4 +1,5 @@
 import React from 'react';
+// import { CSSTransitionGroup } from 'react-transition-group';
 import * as firebase from 'firebase';
 
 const LoadingData = (props) => (

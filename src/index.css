@@ -31,6 +31,15 @@ body {
   transition: opacity 500ms ease-in;
 }
 
+.firebase-appear {
+  opacity: 0.01;
+}
+
+.firebase-appear.firebase-appear-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
 .firebase-leave {
   opacity: 1;
 }
