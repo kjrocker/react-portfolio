@@ -13,7 +13,7 @@ class Footer extends Component {
       <nav style={FooterStyle} className="navbar navbar-inverse navbar-footer footer">
         <div className="container">
           <ul className="nav navbar-nav">
-            <li>Built with ReactJS and Firebase<br/>&copy; 2017 - Kevin Rocker</li>
+            <li>Built with ReactJS, Powered by Firebase<br/>&copy; 2017 - Kevin Rocker</li>
           </ul>
           <ul className="nav navbar-nav navbar-right">
             <li><a href="mailto:kevin.j.rocker@gmail.com">Email</a></li>
