@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { firebaseConnect, isLoaded, isEmpty, dataToJS } from 'react-redux-firebase'
 import _ from 'lodash';
+import * as firebase from 'firebase'
 
 import Blurb from './blurb';
 
@@ -10,9 +9,30 @@ const EmptyBlurbList = (props) => (
 )
 
 class BlurbList extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      blurbs: []
+    }
+  }
+
+  componentDidMount() {
+    firebase
+      .database()
+      .ref('blurbs')
+      .once('value')
+      .then((snap) => {
+        this.setState({
+          blurbs: snap.val()
+        })
+      }
+    )
+  }
+  
   render() {
-    const { blurbs } = this.props
-    const blurbList = (!isLoaded(blurbs) || isEmpty(blurbs))
+    const { blurbs } = this.state
+    const blurbList = blurbs.length == 0
       ? <EmptyBlurbList/>
       : blurbs.map((s, i) => <Blurb key={i} blurb={s}/>)
 
@@ -24,12 +44,4 @@ class BlurbList extends Component {
   }
 }
 
-const connectedList = firebaseConnect([
-  '/blurbs'
-])(BlurbList)
-
-export default connect(
-  ({ firebase }) => ({
-    blurbs: dataToJS(firebase, 'blurbs'),
-  })
-)(connectedList)
+export default BlurbList;
