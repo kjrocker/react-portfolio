@@ -1,19 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
+import * as firebase from 'firebase';
 import MyRouter from './router';
-import configureStore from './store';
 
 import { browserHistory } from 'react-router';
 import './index.css';
 
-const initialState = window.__INITIAL_STATE__ || {firebase: { authError: null }}
+var config = {
+  apiKey: 'AIzaSyBblWmW4g2XFh0ggGT8G6uU6s_1G3g10qc',
+  authDomain: 'portfolio-13a33.firebaseapp.com',
+  databaseURL: 'https://portfolio-13a33.firebaseio.com'
+}
 
-const store = configureStore(initialState)
+firebase.initializeApp(config)
 
 ReactDOM.render(
-  <Provider store={store}>
-    <MyRouter history={browserHistory}/>
-  </Provider>,
+  <MyRouter history={browserHistory}/>
   document.getElementById('root')
 );
