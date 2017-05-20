@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import _ from 'lodash';
-import * as firebase from 'firebase'
 
+import { connectToFirebase } from '../helpers'
 import Blurb from './blurb';
 
 const EmptyBlurbList = (props) => (
@@ -9,32 +9,9 @@ const EmptyBlurbList = (props) => (
 )
 
 class BlurbList extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      blurbs: []
-    }
-  }
-
-  componentDidMount() {
-    firebase
-      .database()
-      .ref('blurbs')
-      .once('value')
-      .then((snap) => {
-        this.setState({
-          blurbs: snap.val()
-        })
-      }
-    )
-  }
-  
   render() {
-    const { blurbs } = this.state
-    const blurbList = blurbs.length == 0
-      ? <EmptyBlurbList/>
-      : blurbs.map((s, i) => <Blurb key={i} blurb={s}/>)
+    const { blurbs } = this.props.data
+    const blurbList = blurbs.map((s, i) => <Blurb key={i} blurb={s}/>)
 
     return (
       <div className="row">
@@ -44,4 +21,4 @@ class BlurbList extends Component {
   }
 }
 
-export default BlurbList;
+export default connectToFirebase(BlurbList, 'blurbs');

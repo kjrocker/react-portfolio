@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import * as firebase from 'firebase';
 
 const _pipe = (f, g) => (...args) => g(f(...args))
 const pipe = (...fns) => fns.reduce(_pipe)
 
-const connectToFirebase(Component, ...sections) {
+function connectToFirebase(Component, ...sections) {
   const dbConnection = firebase.database()
 
-  class ConnectComponent extends React.Component {
+  return class ConnectComponent extends React.Component {
     constructor(props) {
       super(props)
       const tmp = {}
@@ -32,10 +32,10 @@ const connectToFirebase(Component, ...sections) {
     render() {
       return (
         <div>
-          { Object.values(this.state).every((x) => x === null) ? null :  <Component {...this.props} data={this.state} /> }
+          { Object.values(this.state).every((x) => x === null) ? null :  <Component data={this.state} {...this.props} /> }
         </div>
       )
     }
   }
 }
-export default { pipe };
+export { connectToFirebase, pipe };
