@@ -74,7 +74,14 @@ const database = {
     "liveUrl" : "",
     "title" : "Dating UI/UX",
     "visible" : false
-  } ]
+  }, {
+    "body" : "Solving Project Euler problems in a variety of languages. This is usually where I go to learn new languages.",
+    "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/4xrIy8w.jpg",
+    "sourceUrl" : "",
+    "title" : "Project Euler",
+    "visible" : true
+    }
+  ]
 };
 
 export default database;
