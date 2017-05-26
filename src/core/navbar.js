@@ -3,16 +3,14 @@ import { Link } from 'react-router';
 
 const navbarStyle = {
   fontSize: '18px',
-  height: '60px',
   padding: '5px 10%',
+  height: '60px',
   color: '#ddd',
 }
 
 const Navbar = (props) => (
   <nav style={navbarStyle} className="navbar navbar-inverse navbar-fixed-top">
-    <div className='container-fluid'>
-      <ul className="nav navbar-nav">
-      </ul>
+    <div className="container-fluid">
       <ul className="nav navbar-nav navbar-right">
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/portfolio'>Projects</Link></li>

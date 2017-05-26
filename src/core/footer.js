@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 const FooterStyle = {
-  fontSize: '18px',
+  fontSize: '14px',
+  marginTop: '2%',
   marginBottom: '0px',
   color: '#f0f0f0',
   padding: '5px 10%'

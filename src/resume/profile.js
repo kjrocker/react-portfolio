@@ -1,4 +1,5 @@
 import React from 'react';
+import ResumeRow from './resumeRow';
 
 const ProfileText = `
 I am a former student of UNC Chapel Hill and Consultant at Levvel, LLC. I have naturally
@@ -9,11 +10,24 @@ on enterprise web development, especially on database design and creating effect
 maintainable code while addressing the ever-changing needs of clients.
 `
 
+const SkillText = "SQL, Ruby on Rails, ReactJS, Redux, Javascript, Elixir/Phoenix, Git, Angular, CoffeeScript, ES6, jQuery, UNIX, Functional Programming, HTML, CSS"
+
+const EducationText = "UNC Chapel Hill (Graduated 2014), Tech Talent South (Summer 2016)"
+
 const Profile = (props) => (
-  <div className="row">
-    <div className="col-md-2"><strong>Profile:</strong></div>
-    <div className="col-md-10"><p>{ProfileText}</p></div>
-  </div>
+  <ResumeRow leftText='Profile' rightText={ProfileText}/>
 )
 
-export default Profile;
+const Skills = (props) => (
+  <ResumeRow leftText='Skills' rightText={SkillText}/>
+)
+
+const Education = (props) => (
+  <ResumeRow leftText='Education' rightText={EducationText}/>
+)
+
+export {
+  Profile,
+  Skills,
+  Education
+};

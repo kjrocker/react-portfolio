@@ -1,13 +1,21 @@
-@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+$serif: 'Merriweather', serif;
+$sans-serif: 'Lato', sans-serif;
 
 html {
   height: 100%;
 }
 
 body {
-  font-family: "Slado 27px", serif;
   font-size: 16px;
+  font-family: $serif;
+  line-height: 1.6em;
   background-color: #f0f0f0;
+  h1, h2, h3, h4 {
+    font-family: $sans-serif;
+  }
 }
 
 .App {
@@ -22,6 +30,24 @@ body {
   color: #0f0f0f;
 }
 
+.projects {
+  h2 small {
+    font-family: $serif;
+  }
+}
+
+.job-history {
+  .left-head {
+    font-family: $sans-serif;
+    font-size: 27px;
+  }
+  .col-md-2 p {
+    padding-bottom: 5%;
+  }
+  .right-info {
+    font-size: 14px;
+  }
+}
 .firebase-enter {
   opacity: 0.01;
 }

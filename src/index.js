@@ -4,7 +4,7 @@ import * as firebase from 'firebase';
 import MyRouter from './router';
 
 import { browserHistory } from 'react-router';
-import './index.css';
+import './index.scss';
 
 var config = {
   apiKey: 'AIzaSyBblWmW4g2XFh0ggGT8G6uU6s_1G3g10qc',

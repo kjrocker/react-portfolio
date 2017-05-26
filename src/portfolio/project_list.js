@@ -34,7 +34,7 @@ class ProjectList extends Component {
         <ProjectRow key={i} projects={p}/>
       ))
     return (
-      <div>
+      <div className="projects">
         { listBody }
       </div>
     )
