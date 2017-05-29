@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import BlurbList from './blurb_list';
 import HomeHeader from './header';
 import Biography from './biography'

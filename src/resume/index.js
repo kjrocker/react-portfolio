@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
 
 import { Profile, Skills, Education} from './profile'
 import JobRow from './job_row'
