@@ -35,14 +35,14 @@ const database = {
     "title" : "Research Lab Volunteer"
   } ],
   "projects" : [ {
-    "body" : "Extending ActiveRecord with a .sample method",
+    "body" : "Extending ActiveRecord with a sample method. A simple attempt at Gem creation.",
     "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/Snake_eyes_dice.jpg",
     "liveUrl" : "",
     "sourceUrl" : "https://github.com/kjrocker/simple_sample",
     "title" : "Simple Sample",
     "visible" : true
   }, {
-    "body" : "A straightforward clone of my favorite website, written in Elixir",
+    "body" : "Rolling my own authentication in Elixir/Phoenix, using the new structure of Phoenix 1.3 for organization.",
     "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/phoenixframework.png",
     "liveUrl" : "",
     "sourceUrl" : "https://github.com/kjrocker/readdit-elixir",
@@ -56,6 +56,18 @@ const database = {
     "title" : "Chaldea Foundation",
     "visible" : true
   }, {
+    "body" : "Template for a Rails API with token based authentication. Focused on a few polished features and best practices",
+    "sourceUrl" : "https://github.com/kjrocker/rails-api",
+    "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/rubies.jpg",
+    "title" : "Rails API",
+    "visible" : true
+  }, {
+    "body" : "React companion to the Rails API, with Redux. Makes use of higher order abstractions and consistent structure.",
+    "sourceUrl" : "https://github.com/kjrocker/react-client",
+    "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/react-logo.jpg",
+    "title" : "React Client",
+    "visible" : true
+  }, {
     "body" : "An experiment in UI design, pulling from OkCupid and Match.com",
     "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/match-ui-project.jpg",
     "liveUrl" : "",
@@ -63,7 +75,7 @@ const database = {
     "visible" : false
   }, {
     "body" : "Solving Project Euler problems in a variety of languages. This is usually where I go to learn new languages.",
-    "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/4xrIy8w.jpg",
+    "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/project_euler.jpg",
     "sourceUrl" : "",
     "title" : "Project Euler",
     "visible" : true
