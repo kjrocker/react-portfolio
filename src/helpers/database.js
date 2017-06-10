@@ -34,53 +34,64 @@ const database = {
     "summary" : "Managed an independant research project, involving analysis of raw genotype data to meet the laboratory's broader research goals. Interwove SQL, Python, and R to produce meaningful statistics and visualizations from millions of data points.",
     "title" : "Research Lab Volunteer"
   } ],
-  "projects" : [ {
-    "body" : "Extending ActiveRecord with a sample method. A simple attempt at Gem creation.",
-    "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/Snake_eyes_dice.jpg",
-    "liveUrl" : "",
-    "sourceUrl" : "https://github.com/kjrocker/simple_sample",
-    "title" : "Simple Sample",
-    "visible" : true
-  }, {
-    "body" : "Rolling my own authentication in Elixir/Phoenix, using the new structure of Phoenix 1.3 for organization.",
-    "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/phoenixframework.png",
-    "liveUrl" : "",
-    "sourceUrl" : "https://github.com/kjrocker/readdit-elixir",
-    "title" : "Readdit",
-    "visible" : true
-  }, {
-    "body" : "A reference website for Fate Grand Order, a mobile role-playing game",
-    "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/Fate_Grand_Order_logo.png",
-    "liveUrl" : "",
-    "sourceUrl" : "https://github.com/kjrocker/fgo-resources",
-    "title" : "Chaldea Foundation",
-    "visible" : true
-  }, {
-    "body" : "Template for a Rails API with token based authentication. Focused on a few polished features and best practices",
-    "sourceUrl" : "https://github.com/kjrocker/rails-api",
-    "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/rubies.jpg",
-    "title" : "Rails API",
-    "visible" : true
-  }, {
-    "body" : "React companion to the Rails API, with Redux. Makes use of higher order abstractions and consistent structure.",
-    "sourceUrl" : "https://github.com/kjrocker/react-client",
-    "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/react-logo.jpg",
-    "title" : "React Client",
-    "visible" : true
-  }, {
-    "body" : "An experiment in UI design, pulling from OkCupid and Match.com",
-    "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/match-ui-project.jpg",
-    "liveUrl" : "",
-    "title" : "Dating UI/UX",
-    "visible" : false
-  }, {
-    "body" : "Solving Project Euler problems in a variety of languages. This is usually where I go to learn new languages.",
-    "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/project_euler.jpg",
-    "sourceUrl" : "",
-    "title" : "Project Euler",
-    "visible" : true
-    }
-  ]
+  "projects" : {
+    "projectOrder" : ["simple-sample", "rails-api", "react-client", "grand-order", "project-euler"],
+    "projectList": [ {
+        "body" : "Extending ActiveRecord with a sample method. A simple attempt at Gem creation.",
+        "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/Snake_eyes_dice.jpg",
+        "liveUrl" : "",
+        "sourceUrl" : "https://github.com/kjrocker/simple_sample",
+        "title" : "Simple Sample",
+        "id": "simple-sample",
+      }, {
+        "body" : "Rolling my own authentication in Elixir/Phoenix, using the new structure of Phoenix 1.3 for organization.",
+        "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/phoenixframework.png",
+        "liveUrl" : "",
+        "sourceUrl" : "https://github.com/kjrocker/readdit-elixir",
+        "title" : "Readdit",
+        "id" : "readdit-elixir",
+      }, {
+        "body" : "A reference website for Fate Grand Order, a mobile role-playing game",
+        "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/Fate_Grand_Order_logo.png",
+        "liveUrl" : "",
+        "sourceUrl" : "https://github.com/kjrocker/fgo-resources",
+        "title" : "Chaldea Foundation",
+        "id" : "grand-order",
+      }, {
+        "body" : "A traditional Reddit-like API in Rails",
+        "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/rubies.jpg",
+        "liveUrl" : "",
+        "sourceUrl" : "https://github.com/kjrocker/readdit-ruby",
+        "title" : "Readdit API",
+        "id" : "readdit-rails",
+      }, {
+        "body" : "Template for a Rails API with token based authentication. Focused on a few polished features and best practices",
+        "sourceUrl" : "https://github.com/kjrocker/rails-api",
+        "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/rubies.jpg",
+        "title" : "Rails API",
+        "id" : "rails-api",
+      }, {
+        "body" : "React companion to the Rails API, with Redux. Makes use of higher order abstractions and consistent structure.",
+        "sourceUrl" : "https://github.com/kjrocker/react-client",
+        "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/react-logo.jpg",
+        "title" : "React Client",
+        "id" : "react-client",
+      }, {
+        "body" : "An experiment in UI design, pulling from OkCupid and Match.com",
+        "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/match-ui-project.jpg",
+        "liveUrl" : "",
+        "title" : "Dating UI/UX",
+        "id" : "dating-ui",
+      }, {
+        "body" : "Solving Project Euler problems in a variety of languages. This is usually where I go to learn new languages.",
+        "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/project_euler.jpg",
+        "sourceUrl" : "",
+        "title" : "Project Euler",
+        "id" : "project-euler",
+      }
+    ],
+  }
+
 };
 
 export default database;
