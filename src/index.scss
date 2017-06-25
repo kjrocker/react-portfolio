@@ -19,7 +19,7 @@ body {
 }
 
 .App {
-  padding-top: 60px;
+  // padding-top: 60px;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -36,6 +36,10 @@ body {
   }
 }
 
+.navbar a {
+  color: #f0f0f0;
+}
+
 .job-history {
   .left-head {
     font-family: $sans-serif;
@@ -47,30 +51,4 @@ body {
   .right-info {
     font-size: 14px;
   }
-}
-.firebase-enter {
-  opacity: 0.01;
-}
-
-.firebase-enter.firebase-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-
-.firebase-appear {
-  opacity: 0.01;
-}
-
-.firebase-appear.firebase-appear-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-
-.firebase-leave {
-  opacity: 1;
-}
-
-.firebase-leave.firebase-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
 }

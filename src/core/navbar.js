@@ -1,23 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router';
+import { Navbar, Nav, NavItem } from 'react-bootstrap'
 
 const navbarStyle = {
   fontSize: '18px',
   padding: '5px 10%',
-  height: '60px',
   color: '#ddd',
+  marginBottom: '0px'
 }
 
-const Navbar = (props) => (
-  <nav style={navbarStyle} className="navbar navbar-inverse navbar-fixed-top">
-    <div className="container-fluid">
-      <ul className="nav navbar-nav navbar-right">
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/portfolio'>Projects</Link></li>
-        <li><Link to='/resume'>Resume</Link></li>
-      </ul>
-    </div>
-  </nav>
+
+
+const Navigation = (props) => (
+  <Navbar style={navbarStyle} fixed-top inverse staticTop collapseOnSelect>
+    <Navbar.Toggle/>
+    <Navbar.Collapse>
+      <Nav pullRight>
+        <NavItem eventKey={1}><Link to='/'>Home</Link></NavItem>
+        <NavItem eventKey={2}><Link to='/portfolio'>Projects</Link></NavItem>
+        <NavItem eventKey={3}><Link to='/resume'>Resume</Link></NavItem>
+      </Nav>
+    </Navbar.Collapse>
+  </Navbar>
 )
 
-export default Navbar;
+export default Navigation;
