@@ -35,7 +35,7 @@ const database = {
     "title" : "Research Lab Volunteer"
   } ],
   "projects" : {
-    "projectOrder" : ["simple-sample", "rails-api", "react-client", "grand-order", "project-euler"],
+    "projectOrder" : ["fanfic", "simple-sample", "rails-api"],
     "projectList": [ {
         "body" : "Extending ActiveRecord with a sample method. A simple attempt at Gem creation.",
         "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/Snake_eyes_dice.jpg",
@@ -44,12 +44,12 @@ const database = {
         "title" : "Simple Sample",
         "id": "simple-sample",
       }, {
-        "body" : "Rolling my own authentication in Elixir/Phoenix, using the new structure of Phoenix 1.3 for organization.",
+        "body" : "A Fanfiction Hosting Platform for the Modern Age",
         "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/phoenixframework.png",
         "liveUrl" : "",
-        "sourceUrl" : "https://github.com/kjrocker/readdit-elixir",
-        "title" : "Readdit",
-        "id" : "readdit-elixir",
+        "sourceUrl" : "https://github.com/kjrocker/phoenix-fanfic",
+        "title" : "Fanfic.Co",
+        "id" : "fanfic",
       }, {
         "body" : "A reference website for Fate Grand Order, a mobile role-playing game",
         "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/Fate_Grand_Order_logo.png",
@@ -58,24 +58,11 @@ const database = {
         "title" : "Chaldea Foundation",
         "id" : "grand-order",
       }, {
-        "body" : "A traditional Reddit-like API in Rails",
-        "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/rubies.jpg",
-        "liveUrl" : "",
-        "sourceUrl" : "https://github.com/kjrocker/readdit-ruby",
-        "title" : "Readdit API",
-        "id" : "readdit-rails",
-      }, {
-        "body" : "Template for a Rails API with token based authentication. Focused on a few polished features and best practices",
+        "body" : "Template for a Rails API with token based authentication, with a React front-end. Designed for Heroku.",
         "sourceUrl" : "https://github.com/kjrocker/rails-api",
         "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/rubies.jpg",
         "title" : "Rails API",
         "id" : "rails-api",
-      }, {
-        "body" : "React companion to the Rails API, with Redux. Makes use of higher order abstractions and consistent structure.",
-        "sourceUrl" : "https://github.com/kjrocker/react-client",
-        "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/react-logo.jpg",
-        "title" : "React Client",
-        "id" : "react-client",
       }, {
         "body" : "An experiment in UI design, pulling from OkCupid and Match.com",
         "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/match-ui-project.jpg",
@@ -85,7 +72,7 @@ const database = {
       }, {
         "body" : "Solving Project Euler problems in a variety of languages. This is usually where I go to learn new languages.",
         "imageUrl" : "https://s3.amazonaws.com/kjrocker-portfolio/project_euler.jpg",
-        "sourceUrl" : "",
+        "sourceUrl" : "https://github.com/kjrocker/project_euler",
         "title" : "Project Euler",
         "id" : "project-euler",
       }
