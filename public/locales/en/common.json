@@ -1,4 +1,30 @@
 {
   "siteTitle": "Kevin Rocker",
-  "myName": "Kevin Rocker"
+  "siteSubtitle": "Continous Innovation",
+  "nav": { "home": "Home", "resume": "Resume" },
+  "home": {
+    "biographyTitle": "About Me",
+    "biographyContent":
+      "I am a professional web developer focused on Ruby on Rails and ReactJS. I have been coding in some capacity for as long as I can remember, only beginning my professional career in late 2016 with Levvel.\n\nI thrive on challenge and system engineering, always keeping the big picture and return-on-investment in mind when making or suggesting changes. I also have a proven ability to explain myself at a non-technical level whenever necessary, which comes in handy rather often!",
+    "contactTitle": "Contact",
+    "contactContent": "I live and work in Charlotte, North Carolina.\n\nYou can find me through the services below.",
+    "blurbs": [
+      {
+        "title": "Skilled",
+        "content":
+          "I've only scratched the surface of what I can do with programming and web development, but I've already been able to apply what I know to accomplish meaningful and productive tasks. This skill curve will only accelerate as each technology and skill builds on my knowledge in new and exciting ways."
+      },
+      {
+        "title": "Friendly",
+        "content":
+          "I strive to be approachable and authentic whenever possible. While I can be all business when I need to be, I prefer to be informal and easy to work with. Whether it's talking with co-workers at a meeting, or just in everyday interactions with other human beings, I have a smile and a joke for anyone who wants one."
+      },
+      {
+        "title": "Logical",
+        "content":
+          "Supplementing my computer science abilities is a fascination with algorithms, science, mathematics, and formal logic. I bring all these skills to every project I'm involved in, and they provide me with powerful insights and a knack for lateral problem solving."
+      }
+    ]
+  },
+  "footer": { "copyrightText": "© {{year}} - Kevin Rocker" }
 }

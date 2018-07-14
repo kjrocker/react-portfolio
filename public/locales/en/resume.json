@@ -1,0 +1,64 @@
+{
+  "resumeTitle": "Resume and Histroy",
+  "profile": {
+    "title": "Profile",
+    "content":
+      "I am a former student of UNC Chapel Hill and Consultant at Levvel, LLC. I have naturally migrated to software and programming in every position I have ever held, including in biology research and a clinical laboratory. Along the way, I have supplemented my skills through explorations of science, mathematics, and logical reasoning. I am currently focused on enterprise web development, especially on database design and creating effective, maintainable code while addressing the ever-changing needs of clients."
+  },
+  "skills": {
+    "title": "Skills",
+    "content": ["SQL", "ReactJS", "Redux", "Typescript", "ES6", "Elixir", "Ruby", "HTML", "CSS"]
+  },
+  "education": {
+    "title": "Education",
+    "content": ["UNC Chapel Hill (Graduated 2014)", "Tech Talent South (Summer 2016)"]
+  },
+  "jobs": {
+    "xceleration": {
+      "companyTitle": "Xceleration",
+      "jobTitle": "Front End Developer",
+      "jobDescription": "",
+      "jobDetails": [],
+      "startDate": "August 2017",
+      "endDate": "Present"
+    },
+    "levvel": {
+      "companyTitle": "Levvel",
+      "jobTitle": "Consultant",
+      "jobDescription":
+        "Worked with clients to create effective, maintainable software solutions addressing a wide array of needs, using any technology dictated by the client or the pre-existing codebase.",
+      "jobDetails": [
+        "Gave users of an existing Ruby on Rails app the ability to plan out their sales for the upcoming financial year, and integrated this information with the rest of the application",
+        "Assisted in putting an authorization/permissions system over an already extensive Angular application",
+        "Worked with multiple teams using agile development and a variety of software design, testing, and code review systems"
+      ],
+      "startDate": "September 2016",
+      "endDate": "April 2017"
+    },
+    "pcls": {
+      "companyTitle": "PCLS",
+      "jobTitle": "QC Metrologist",
+      "jobDescription":
+        "Responsible for a broad array of services within the QC department, including instrument maintenance and data analysis. Developed automation tools using Excel and VBA to increase department productivity. Also included work with proprietary hardware automation tools.",
+      "jobDetails": [
+        "Developed an automated QC chart system in Excel, which saved over 40 employee-hours per week by automatically extracting and plotting QC data.",
+        "Created a QC checklist that flagged failed controls, and removed all copy-pasting from the analysis process.",
+        "Worked with the rest of the QC team on instrument maintenance and calibration curve analysis, ensuring quality in production"
+      ],
+      "startDate": "June 2012",
+      "endDate": "July 2016"
+    },
+    "unc": {
+      "companyTitle": "UNC",
+      "jobTitle": "Lab Volunteer",
+      "jobDescription":
+        "Managed an independant research project, involving analysis of raw genotype data to meet the laboratory's broader research goals. Interwove SQL, Python, and R to produce meaningful statistics and visualizations from millions of data points.",
+      "jobDetails": [
+        "Applied various statistical techniques and algorithms to raw data from the lab's SNP microarray",
+        "Created part of the computational suite required to turn this microarray into a toolkit for determining the subspecies of mixed wild mouse populations"
+      ],
+      "startDate": "Spring 2013",
+      "endDate": "May 2014"
+    }
+  }
+}

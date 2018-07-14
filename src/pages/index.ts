@@ -1,2 +1,2 @@
-import HomePage from './HomePage';
-export { HomePage };
+import SiteContent from './Layout';
+export default SiteContent;
