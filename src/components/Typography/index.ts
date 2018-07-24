@@ -5,8 +5,13 @@ export const Paragraph = styled.p`
   font-family: ${(props) => props.theme.primaryFont};
 `;
 
+// Get the typography styling when we're rendering
+// markdown, which provides its own `p` tags.
+export const Typography = Paragraph.withComponent('div');
+
 const BaseHeader = styled.h1`
   color: ${(props) => props.theme.primary};
+  font-family: ${(props) => props.theme.secondaryFont};
   margin-top: 20px;
 `;
 

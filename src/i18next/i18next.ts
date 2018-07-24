@@ -14,7 +14,7 @@ const instance = i18n
     interpolation: {
       escapeValue: false // not needed for react!!
     },
-    ns: ['common', 'resume'],
+    ns: ['common', 'resume', 'home'],
     defaultNS: 'common',
     appendNamespaceToCIMode: true,
     // backend specific options

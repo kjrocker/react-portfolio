@@ -3,11 +3,11 @@
   "profile": {
     "title": "Profile",
     "content":
-      "I am a former student of UNC Chapel Hill and Consultant at Levvel, LLC. I have naturally migrated to software and programming in every position I have ever held, including in biology research and a clinical laboratory. Along the way, I have supplemented my skills through explorations of science, mathematics, and logical reasoning. I am currently focused on enterprise web development, especially on database design and creating effective, maintainable code while addressing the ever-changing needs of clients."
+      "I'm an experienced software engineer that's worked with React, Ruby on Rails, and many others in an enterprise setting. After spending college working with computational biology, I moved into web development and have never looked back. I strive to not just get the job done, but to help improve the processes of the team I'm working with."
   },
   "skills": {
     "title": "Skills",
-    "content": ["SQL", "ReactJS", "Redux", "Typescript", "ES6", "Elixir", "Ruby", "HTML", "CSS"]
+    "content": ["ReactJS", "Redux", "Typescript", "ES6", "SQL", "Elixir", "Ruby", "HTML", "CSS"]
   },
   "education": {
     "title": "Education",
@@ -16,14 +16,19 @@
   "jobs": {
     "xceleration": {
       "companyTitle": "Xceleration",
+      "companyDescription": "Enterprise solutions for employee award programs",
       "jobTitle": "Front End Developer",
       "jobDescription": "",
-      "jobDetails": [],
+      "jobDetails": [
+        "Lead work on employee nominations, one of the two central points of the Rewardstation platform",
+        "Pushed code practices forward, including Redux selectors and improved Typescript practices"
+      ],
       "startDate": "August 2017",
       "endDate": "Present"
     },
     "levvel": {
       "companyTitle": "Levvel",
+      "companyDescription": "Software Consultancy",
       "jobTitle": "Consultant",
       "jobDescription":
         "Worked with clients to create effective, maintainable software solutions addressing a wide array of needs, using any technology dictated by the client or the pre-existing codebase.",
@@ -37,6 +42,7 @@
     },
     "pcls": {
       "companyTitle": "PCLS",
+      "companyDescription": "Urine Toxicology Lab",
       "jobTitle": "QC Metrologist",
       "jobDescription":
         "Responsible for a broad array of services within the QC department, including instrument maintenance and data analysis. Developed automation tools using Excel and VBA to increase department productivity. Also included work with proprietary hardware automation tools.",
@@ -50,6 +56,7 @@
     },
     "unc": {
       "companyTitle": "UNC",
+      "companyDescription": "University of North Carolina at Chapel Hill",
       "jobTitle": "Lab Volunteer",
       "jobDescription":
         "Managed an independant research project, involving analysis of raw genotype data to meet the laboratory's broader research goals. Interwove SQL, Python, and R to produce meaningful statistics and visualizations from millions of data points.",

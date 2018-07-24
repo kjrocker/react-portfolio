@@ -1,25 +1,26 @@
 import { TranslationFunction } from 'i18next';
 import * as React from 'react';
 import { Col, Row, RowProps } from 'reactstrap';
-import { Paragraph, SmallHeader } from '../../components';
-import { withText } from '../../i18next';
+import { Typography } from '../../components';
+import { withText, WithTextProps } from '../../i18next';
+import { SmallResumeHeader } from './styles';
 
-export interface SkillProps extends RowProps {
+export interface SkillProps extends RowProps, WithTextProps {
   id: 'skills' | 'education' | 'profile';
   body: string[];
   title: string;
 }
 
-const Skills: React.SFC<SkillProps> = ({ ref, body, title, ...rest }) => {
+const Skills: React.SFC<SkillProps> = ({ ref, body, title, i18n, t, ready, ...rest }) => {
   return (
     <>
       <hr />
       <Row {...rest}>
         <Col sm={2}>
-          <SmallHeader>{title}</SmallHeader>
+          <SmallResumeHeader>{title}</SmallResumeHeader>
         </Col>
         <Col sm={10}>
-          <Paragraph>{body}</Paragraph>
+          <Typography>{body}</Typography>
         </Col>
       </Row>
     </>

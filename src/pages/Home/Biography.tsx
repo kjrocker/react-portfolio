@@ -1,7 +1,7 @@
 import { TranslationFunction } from 'i18next';
 import * as React from 'react';
 import { Col, ColProps } from 'reactstrap';
-import { Paragraph, SmallHeader } from '../../components';
+import { Typography, SmallHeader } from '../../components';
 import { withText, WithTextProps } from '../../i18next';
 
 export interface BiographyProps extends WithTextProps, ColProps {
@@ -9,16 +9,16 @@ export interface BiographyProps extends WithTextProps, ColProps {
   content: string;
 }
 
-const Biography: React.SFC<BiographyProps> = ({ ref, header, content, ...props }) => (
+const Biography: React.SFC<BiographyProps> = ({ ref, header, content, t, i18n, ready, ...props }) => (
   <Col {...props}>
     <SmallHeader>{header}</SmallHeader>
-    <Paragraph>{content}</Paragraph>
+    <Typography>{content}</Typography>
   </Col>
 );
 
 const mapText = (t: TranslationFunction) => ({
-  header: t('common:home:biographyTitle'),
-  content: t('common:home:biographyContent', { postProcess: 'markdown-jsx' })
+  header: t('home:biographyTitle'),
+  content: t('home:biographyContent', { postProcess: 'markdown-jsx' })
 });
 
 export default withText(mapText)(Biography) as React.SFC<ColProps>;

@@ -1,14 +1,11 @@
 import * as React from 'react';
 import { Col, Row } from 'reactstrap';
-import { Paragraph, SmallHeader } from '../../../components';
+import { Paragraph } from '../../../components';
 import withJobText, { InternalJobRenderer } from './util';
+import { SmallResumeHeader } from '../styles';
 
 const BigParagraph = Paragraph.extend`
   font-size: 18px;
-`;
-
-const ResumeHeader = SmallHeader.extend`
-  margin-top: 0px;
 `;
 
 const JobRenderer: InternalJobRenderer = ({ job }) => {
@@ -17,7 +14,7 @@ const JobRenderer: InternalJobRenderer = ({ job }) => {
       <hr />
       <Row>
         <Col xs={2}>
-          <ResumeHeader>{job.company.title}</ResumeHeader>
+          <SmallResumeHeader>{job.company.title}</SmallResumeHeader>
           <Paragraph>{job.info.jobTitle}</Paragraph>
           <Paragraph>
             {job.info.startDate} through {job.info.endDate}

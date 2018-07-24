@@ -2,16 +2,16 @@ import { TranslationFunction } from 'i18next';
 import * as React from 'react';
 import { Container, ContainerProps } from 'reactstrap';
 import { Header } from '../../components';
-import { withText } from '../../i18next';
+import { withText, WithTextProps } from '../../i18next';
 import BodyContent from './BodyContent';
 import JobList from './JobList';
 import ListContent from './ListContent';
 
-export interface ResumeProps extends ContainerProps {
+export interface ResumeProps extends ContainerProps, WithTextProps {
   title: string;
 }
 
-const Resume: React.SFC<ResumeProps> = ({ title, ...rest }) => (
+const Resume: React.SFC<ResumeProps> = ({ title, t, i18n, ready, ...rest }) => (
   <Container {...rest}>
     <Header>{title}</Header>
     <BodyContent id="profile" />

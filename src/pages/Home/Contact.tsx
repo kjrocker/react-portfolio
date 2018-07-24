@@ -3,12 +3,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { TranslationFunction } from 'i18next';
 import * as React from 'react';
 import { Col, ColProps } from 'reactstrap';
-import {
-  ContactButton,
-  Header,
-  Icon,
-  Paragraph
-  } from '../../components';
+import { ContactButton, Header, Icon, Typography } from '../../components';
 import { withText, WithTextProps } from '../../i18next';
 
 export interface ContactProps extends WithTextProps, ColProps {
@@ -20,10 +15,10 @@ const ICON_SIZE = '1x';
 const EMAIL_KEY =
   '&#107;&#101;&#118;&#105;&#110;&#046;&#106;&#046;&#114;&#111;&#099;&#107;&#101;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;';
 
-const Contact: React.SFC<ContactProps> = ({ ref, header, content, ...props }) => (
+const Contact: React.SFC<ContactProps> = ({ ref, header, content, i18n, t, ready, ...props }) => (
   <Col {...props}>
     <Header>{header}</Header>
-    <Paragraph>{content}</Paragraph>
+    <Typography>{content}</Typography>
     <ContactButton backgroundColor="#4f4f4f" hoverBackgroundColor="#363636" href={`mailto:${EMAIL_KEY}`}>
       <Icon size={ICON_SIZE} icon={faEnvelope} /> Email
     </ContactButton>
@@ -47,8 +42,8 @@ const Contact: React.SFC<ContactProps> = ({ ref, header, content, ...props }) =>
 );
 
 const mapText = (t: TranslationFunction) => ({
-  header: t('common:home:contactTitle'),
-  content: t('common:home:contactContent', { postProcess: 'markdown-jsx' })
+  header: t('home:contactTitle'),
+  content: t('home:contactContent', { postProcess: 'markdown-jsx' })
 });
 
 export default withText(mapText)(Contact) as React.SFC<ColProps>;
