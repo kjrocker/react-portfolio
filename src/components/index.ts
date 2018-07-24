@@ -4,3 +4,4 @@ export { Footer } from './Footer';
 export { Icon } from './Icon';
 export { ContactButton } from './Button';
 export { Paragraph, Header, SmallHeader, InverseHeader, Typography } from './Typography';
+export { DividedRow } from './Template';

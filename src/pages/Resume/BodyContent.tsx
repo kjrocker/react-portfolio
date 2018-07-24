@@ -1,7 +1,7 @@
 import { TranslationFunction } from 'i18next';
 import * as React from 'react';
-import { Col, Row, RowProps } from 'reactstrap';
-import { Typography } from '../../components';
+import { RowProps } from 'reactstrap';
+import { Typography, DividedRow } from '../../components';
 import { withText, WithTextProps } from '../../i18next';
 import { SmallResumeHeader } from './styles';
 
@@ -13,17 +13,10 @@ export interface SkillProps extends RowProps, WithTextProps {
 
 const Skills: React.SFC<SkillProps> = ({ ref, body, title, i18n, t, ready, ...rest }) => {
   return (
-    <>
-      <hr />
-      <Row {...rest}>
-        <Col sm={2}>
-          <SmallResumeHeader>{title}</SmallResumeHeader>
-        </Col>
-        <Col sm={10}>
-          <Typography>{body}</Typography>
-        </Col>
-      </Row>
-    </>
+    <DividedRow
+      leftColumn={(props) => <SmallResumeHeader>{title}</SmallResumeHeader>}
+      rightColumn={(props) => <Typography>{body}</Typography>}
+    />
   );
 };
 
