@@ -3,7 +3,7 @@
   "profile": {
     "title": "Profile",
     "content":
-      "I'm an experienced software engineer that's worked with React, Ruby on Rails, and many others in an enterprise setting. After spending college working with computational biology, I moved into web development and have never looked back. I strive to not just get the job done, but to help improve the processes of the team I'm working with."
+      "I'm an experienced software engineer that's worked with React, Ruby on Rails, and many other technologies in an enterprise setting. After spending college working with computational biology, I moved into web development and have never looked back. I strive to not just get the job done, but to help improve the processes of the team I'm working with."
   },
   "skills": {
     "title": "Skills",
@@ -18,8 +18,10 @@
       "companyTitle": "Xceleration",
       "companyDescription": "Enterprise solutions for employee award programs",
       "jobTitle": "Front End Developer",
-      "jobDescription": "",
+      "jobDescription":
+        "Helped my team ship the latest version of RewardStation, a platform for enterprise clients to create their own, completely customized, employee incentive programs",
       "jobDetails": [
+        "Worked under both agile and non-agile workflows to meet business requirements and deadlines",
         "Lead work on employee nominations, one of the two central points of the Rewardstation platform",
         "Pushed code practices forward, including Redux selectors and improved Typescript practices"
       ],
@@ -45,7 +47,7 @@
       "companyDescription": "Urine Toxicology Lab",
       "jobTitle": "QC Metrologist",
       "jobDescription":
-        "Responsible for a broad array of services within the QC department, including instrument maintenance and data analysis. Developed automation tools using Excel and VBA to increase department productivity. Also included work with proprietary hardware automation tools.",
+        "Responsible for a broad array of services within the QC department, including instrument maintenance and data analysis. Developed automation tools using Excel and VBA to increase department productivity.",
       "jobDetails": [
         "Developed an automated QC chart system in Excel, which saved over 40 employee-hours per week by automatically extracting and plotting QC data.",
         "Created a QC checklist that flagged failed controls, and removed all copy-pasting from the analysis process.",
