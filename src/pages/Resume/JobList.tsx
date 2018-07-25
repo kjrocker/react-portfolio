@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ColumnRenderer as DefaultRenderer, JobRenderer } from './JobRenderers';
 
-export const JOB_KEYS = ['levvel', 'pcls', 'unc'];
+export const JOB_KEYS = ['xceleration', 'levvel', 'pcls', 'unc'];
 
 export interface JobListProps {
   jobRenderer?: JobRenderer;

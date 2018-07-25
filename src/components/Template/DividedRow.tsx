@@ -22,7 +22,7 @@ const DividedRow: React.SFC<DividedRowProps> = ({
     <>
       <hr />
       <Row {...props}>
-        <Col xs={leftColumnCount}>
+        <Col xs={leftColumnCount} style={{ paddingRight: '0px' }}>
           <LeftColumn {...columnProps} />
         </Col>
         <Col xs={rightColumnCount}>

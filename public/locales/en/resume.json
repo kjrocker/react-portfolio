@@ -21,7 +21,7 @@
       "jobDescription":
         "Helped my team ship the latest version of RewardStation, a platform for enterprise clients to create their own, completely customized, employee incentive programs",
       "jobDetails": [
-        "Worked under both agile and non-agile workflows to meet business requirements and deadlines",
+        "Worked under under a variety of management conditions and structures to meet deadlines and fulfill business needs",
         "Lead work on employee nominations, one of the two central points of the Rewardstation platform",
         "Pushed code practices forward, including Redux selectors and improved Typescript practices"
       ],
@@ -35,7 +35,7 @@
       "jobDescription":
         "Worked with clients to create effective, maintainable software solutions addressing a wide array of needs, using any technology dictated by the client or the pre-existing codebase.",
       "jobDetails": [
-        "Gave users of an existing Ruby on Rails app the ability to plan out their sales for the upcoming financial year, and integrated this information with the rest of the application",
+        "Gave users of an existing Ruby on Rails app the ability to plan out their sales for the upcoming financial year",
         "Assisted in putting an authorization/permissions system over an already extensive Angular application",
         "Worked with multiple teams using agile development and a variety of software design, testing, and code review systems"
       ],
