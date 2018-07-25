@@ -9,6 +9,8 @@ export interface DividedRowProps extends RowProps {
   rightColumnCount?: number;
 }
 
+const lessRightPadding = { paddingRight: '5px' };
+
 const DividedRow: React.SFC<DividedRowProps> = ({
   ref,
   leftColumnCount = 2,
@@ -22,7 +24,7 @@ const DividedRow: React.SFC<DividedRowProps> = ({
     <>
       <hr />
       <Row {...props}>
-        <Col xs={leftColumnCount} style={{ paddingRight: '0px' }}>
+        <Col xs={leftColumnCount} style={lessRightPadding}>
           <LeftColumn {...columnProps} />
         </Col>
         <Col xs={rightColumnCount}>
