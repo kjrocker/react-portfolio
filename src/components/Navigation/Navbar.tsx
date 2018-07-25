@@ -1,11 +1,10 @@
 import { TranslationFunction } from 'i18next';
 import * as React from 'react';
 import { Route } from 'react-router-dom';
-import { Container, NavbarProps } from 'reactstrap';
+import { NavbarProps } from 'reactstrap';
 import { withText, WithTextProps } from '../../i18next';
-import { invertTheme, ThemeProvider } from '../../theme';
 import NavbarLinks from './NavbarLinks';
-import { Navbar, NavbarBrand } from './styles';
+import { Navbar } from '../Navbar';
 
 export interface NavigationBarProps extends NavbarProps, WithTextProps {
   title: string;
@@ -15,16 +14,9 @@ export interface NavigationBarProps extends NavbarProps, WithTextProps {
 const NavigationBar: React.SFC<NavigationBarProps> = ({ children, t, i18n, ready, title, secondary, ...rest }) => {
   const renderTitle = ({ match }: any) => (match ? secondary : title);
   return (
-    <ThemeProvider theme={invertTheme}>
-      <Navbar {...rest}>
-        <Container>
-          <NavbarBrand>
-            <Route path="/" exact={true} children={renderTitle} />
-          </NavbarBrand>
-          <NavbarLinks />
-        </Container>
-      </Navbar>
-    </ThemeProvider>
+    <Navbar heading={<Route path="/" exact={true} children={renderTitle} />}>
+      <NavbarLinks />
+    </Navbar>
   );
 };
 

@@ -2,7 +2,7 @@ import { TranslationFunction } from 'i18next';
 import * as React from 'react';
 import { Nav, NavItem, NavProps } from 'reactstrap';
 import { withText, WithTextProps } from '../../i18next';
-import { NavLink } from './styles';
+import { InternalNavLink } from '../Navbar';
 
 export interface NavbarLinksProps extends NavProps, WithTextProps {
   homeText: string;
@@ -12,14 +12,14 @@ export interface NavbarLinksProps extends NavProps, WithTextProps {
 const NavbarLinks: React.SFC<NavbarLinksProps> = ({ ref, homeText, resumeText, i18n, t, ready, ...props }) => (
   <Nav {...props}>
     <NavItem>
-      <NavLink exact={true} to="/">
+      <InternalNavLink exact={true} to="/">
         {homeText}
-      </NavLink>
+      </InternalNavLink>
     </NavItem>
     <NavItem>
-      <NavLink exact={true} to="/resume">
+      <InternalNavLink exact={true} to="/resume">
         {resumeText}
-      </NavLink>
+      </InternalNavLink>
     </NavItem>
   </Nav>
 );

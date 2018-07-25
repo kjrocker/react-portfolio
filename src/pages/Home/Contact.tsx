@@ -12,8 +12,7 @@ export interface ContactProps extends WithTextProps, ColProps {
 
 const ICON_SIZE = '1x';
 
-export const EMAIL_KEY =
-  '&#107;&#101;&#118;&#105;&#110;&#046;&#106;&#046;&#114;&#111;&#099;&#107;&#101;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;';
+export const EMAIL_KEY = 'kevin.j.rocker@gmail.com';
 
 const Contact: React.SFC<ContactProps> = ({ ref, header, content, i18n, t, ready, ...props }) => (
   <Col {...props}>

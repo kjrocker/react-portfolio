@@ -1,34 +1,22 @@
 import { TranslationFunction } from 'i18next';
 import * as React from 'react';
-import { Container, Nav, NavLink } from 'reactstrap';
 import { withText } from '../../i18next';
-import { invertTheme, ThemeProvider } from '../../theme';
-import { Navbar, NavbarBrand } from '../Navigation/styles';
+import { Navbar } from '../Navbar';
 import StickyFooter from './StickyFooter';
-import { EMAIL_KEY } from '../../pages/Home/Contact';
+import FooterLinks from './FooterLinks';
 
 export interface FooterProps extends React.BaseHTMLAttributes<{}> {
   copyright: string;
 }
 
+const noPadding = { padding: '0' };
+
 const Footer: React.SFC<FooterProps> = (props) => (
-  <ThemeProvider theme={invertTheme}>
-    <StickyFooter {...props}>
-      <Container>
-        <Navbar>
-          <NavbarBrand>{props.copyright}</NavbarBrand>
-          <Nav>
-            <NavLink href={`mailto:${EMAIL_KEY}`} target="__blank">
-              Email
-            </NavLink>
-            <NavLink href="https://github.com/kjrocker/react-portfolio" target="__blank">
-              Source
-            </NavLink>
-          </Nav>
-        </Navbar>
-      </Container>
-    </StickyFooter>
-  </ThemeProvider>
+  <StickyFooter {...props}>
+    <Navbar heading={props.copyright} style={noPadding}>
+      <FooterLinks />
+    </Navbar>
+  </StickyFooter>
 );
 
 const mapText = (t: TranslationFunction) => ({

@@ -1,8 +1,8 @@
 import { NavLink as NavLinkBase } from 'react-router-dom';
-import { Navbar as NavbarBase, NavbarBrand as NavbarBrandBase } from 'reactstrap';
+import { Navbar as NavbarBase, NavbarBrand as NavbarBrandBase, NavLink as ExNavLinkBase } from 'reactstrap';
 import styled from '../../theme';
 
-export const NavLink = styled(NavLinkBase)`
+export const InternalNavLink = styled(NavLinkBase)`
   display: block;
   font-size: 18px;
   padding: 0.5rem 1rem;
@@ -15,7 +15,17 @@ export const NavLink = styled(NavLinkBase)`
   }
 `;
 
+export const ExternalNavLink = styled(ExNavLinkBase)`
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+  color: ${(props) => props.theme.inverseLinkColor};
+  :hover {
+    color: ${(props) => props.theme.inverseLinkHover};
+  }
+`;
+
 export const Navbar = styled(NavbarBase)`
+  padding: 0.5rem 1rem;
   background-color: ${(props) => props.theme.inverseBackground};
 `;
 
