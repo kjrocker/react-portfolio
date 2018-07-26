@@ -15,8 +15,8 @@ const Resume: React.SFC<ResumeProps> = ({ title, t, i18n, ready, downloadLink, .
   <Container {...rest}>
     <Header>{title}</Header>
     <ResumeRow id="profile" />
-    <JobList />
     <ResumeRow id="skills" />
+    <JobList />
     <ResumeRow id="education" />
     {/* <hr />
     <Button block={true} href="/resume.pdf" target="__blank">

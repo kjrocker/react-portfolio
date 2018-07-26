@@ -17,13 +17,15 @@ injectGlobal`
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <I18nextProvider i18n={i18next}>
-        <ThemeProvider theme={baseTheme}>
-          <SiteContent />
-        </ThemeProvider>
-      </I18nextProvider>
-    </BrowserRouter>
+    <React.StrictMode>
+      <BrowserRouter>
+        <I18nextProvider i18n={i18next}>
+          <ThemeProvider theme={baseTheme}>
+            <SiteContent />
+          </ThemeProvider>
+        </I18nextProvider>
+      </BrowserRouter>
+    </React.StrictMode>
   );
 };
 

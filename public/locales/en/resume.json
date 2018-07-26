@@ -8,7 +8,7 @@
   },
   "skills": {
     "title": "Skills",
-    "content": ["ReactJS", "Redux", "Typescript", "ES6", "SQL", "Elixir", "Ruby", "HTML", "CSS"]
+    "content": ["ReactJS", "Redux", "Typescript", "Javascript", "SQL", "Elixir", "Ruby", "Python", "HTML", "CSS"]
   },
   "education": {
     "title": "Education",
