@@ -3,9 +3,8 @@ import * as React from 'react';
 import { Container, ContainerProps } from 'reactstrap';
 import { Header } from '../../components';
 import { withText, WithTextProps } from '../../i18next';
-import BodyContent from './BodyContent';
 import JobList from './JobList';
-import ListContent from './ListContent';
+import ResumeRow from './ResumeRow';
 
 export interface ResumeProps extends ContainerProps, WithTextProps {
   title: string;
@@ -15,10 +14,10 @@ export interface ResumeProps extends ContainerProps, WithTextProps {
 const Resume: React.SFC<ResumeProps> = ({ title, t, i18n, ready, downloadLink, ...rest }) => (
   <Container {...rest}>
     <Header>{title}</Header>
-    <BodyContent id="profile" />
+    <ResumeRow id="profile" />
     <JobList />
-    <ListContent id="skills" />
-    <ListContent id="education" />
+    <ResumeRow id="skills" />
+    <ResumeRow id="education" />
     {/* <hr />
     <Button block={true} href="/resume.pdf" target="__blank">
       {downloadLink}
