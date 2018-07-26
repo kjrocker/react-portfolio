@@ -11,8 +11,8 @@ const Home: React.SFC<{}> = (props) => {
       <Banner />
       <Container>
         <Row>
-          <Biography sm={8} />
-          <Contact sm={4} />
+          <Biography md={8} />
+          <Contact md={4} />
         </Row>
         <BlurbRow />
       </Container>

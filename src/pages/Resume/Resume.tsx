@@ -1,6 +1,6 @@
 import { TranslationFunction } from 'i18next';
 import * as React from 'react';
-import { Container, ContainerProps } from 'reactstrap';
+import { Button, Container, ContainerProps } from 'reactstrap';
 import { Header } from '../../components';
 import { withText, WithTextProps } from '../../i18next';
 import BodyContent from './BodyContent';
@@ -18,6 +18,9 @@ const Resume: React.SFC<ResumeProps> = ({ title, t, i18n, ready, ...rest }) => (
     <JobList />
     <ListContent id="skills" />
     <ListContent id="education" />
+    <Button block={true} href="/resume.pdf" target="__blank">
+      Get the PDF!
+    </Button>
   </Container>
 );
 

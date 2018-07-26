@@ -1,20 +1,16 @@
 import * as React from 'react';
-import { Row, RowProps, Col } from 'reactstrap';
+import { Col, Row, RowProps } from 'reactstrap';
 
 export interface DividedRowProps extends RowProps {
   leftColumn: React.ComponentType<{}>;
   rightColumn: React.ComponentType<{}>;
   columnProps?: any;
-  leftColumnCount?: number;
-  rightColumnCount?: number;
 }
 
 const lessRightPadding = { paddingRight: '5px' };
 
 const DividedRow: React.SFC<DividedRowProps> = ({
   ref,
-  leftColumnCount = 2,
-  rightColumnCount = 10,
   leftColumn: LeftColumn,
   rightColumn: RightColumn,
   columnProps = {},
@@ -24,10 +20,10 @@ const DividedRow: React.SFC<DividedRowProps> = ({
     <>
       <hr />
       <Row {...props}>
-        <Col xs={leftColumnCount} style={lessRightPadding}>
+        <Col lg={2} md={3} sm={12} style={lessRightPadding}>
           <LeftColumn {...columnProps} />
         </Col>
-        <Col xs={rightColumnCount}>
+        <Col lg={10} md={9} sm={12}>
           <RightColumn {...columnProps} />
         </Col>
       </Row>

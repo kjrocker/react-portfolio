@@ -12,7 +12,7 @@ const BlurbRow: React.SFC<BlurbRowProps> = ({ ref, blurbs, i18n, t, ready, ...pr
   return (
     <Row {...props}>
       {blurbs.map((val, i) => (
-        <Col sm={4} key={i}>
+        <Col md={4} key={i}>
           <SmallHeader>{val.title}</SmallHeader>
           <Paragraph>{val.content}</Paragraph>
         </Col>
