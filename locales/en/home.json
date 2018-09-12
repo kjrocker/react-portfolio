@@ -1,0 +1,24 @@
+{
+  "biographyTitle": "About Me",
+  "biographyContent":
+    "I am a professional web developer focused on Typescript and React. I have been coding in some capacity for as long as I can remember, beginning my professional career in 2016 with Levvel.\n\nI'm a strong believer in web standards, test driven development, and using concrete data to drive business decisions.",
+  "contactTitle": "Contact",
+  "contactContent": "I live and work in Charlotte, North Carolina.\n\nYou can find me through the services below.",
+  "blurbs": [
+    {
+      "title": "Skilled",
+      "content":
+        "I've reached a point where I can not only build webpages, but also create the software architecture to solve complex technical challenges. Whether its content management or data visualization, anything is possible with enough effort."
+    },
+    {
+      "title": "Friendly",
+      "content":
+        "I strive to be approachable and authentic whenever possible. While I can be all business when I need to be, I prefer to be informal and easy to work with. Whether it's talking with co-workers at a meeting, or just in everyday interactions with other human beings, I have a smile and a joke for anyone who wants one."
+    },
+    {
+      "title": "Logical",
+      "content":
+        "Supplementing my computer science abilities is a fascination with algorithms, science, mathematics, and formal logic. I bring all these skills to every project I'm involved in, and they provide me with powerful insights and a knack for lateral problem solving."
+    }
+  ]
+}

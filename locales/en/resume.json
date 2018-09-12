@@ -1,0 +1,74 @@
+{
+  "resumeTitle": "Resume and History",
+  "downloadLink": "Download the PDF",
+  "profile": {
+    "title": "Profile",
+    "content":
+      "I'm an experienced software engineer that's worked with React, Ruby on Rails, and many other technologies in an enterprise setting. After spending college working with computational biology, I moved into web development and have never looked back. Along the way I've supplemented my programming knowledge with biology, mathematics, and various hobbies, giving me a broad range of experiences that I can apply to software development. I strive to not just get the job done, but to help improve the processes of the team I'm working with."
+  },
+  "skills": {
+    "title": "Skills",
+    "content": ["ReactJS", "Redux", "Typescript", "Javascript", "SQL", "Elixir", "Ruby", "Python", "HTML", "CSS"]
+  },
+  "education": {
+    "title": "Education",
+    "content": ["UNC Chapel Hill (Graduated 2014)", "Tech Talent South (Summer 2016)"]
+  },
+  "jobs": {
+    "xceleration": {
+      "companyTitle": "Xceleration",
+      "companyDescription": "Enterprise solutions for employee award programs",
+      "jobTitle": "Front End Developer",
+      "jobDescription":
+        "Helped my team ship the latest version of RewardStation, a platform for enterprise clients to create their own, completely customized, employee incentive programs",
+      "jobDetails": [
+        "Worked under under a variety of management conditions and structures to meet deadlines and fulfill business needs",
+        "Lead work on employee nominations, one of the two central points of the Rewardstation platform",
+        "Pushed code practices forward, including Redux selectors and improved Typescript practices"
+      ],
+      "startDate": "August 2017",
+      "endDate": "Present"
+    },
+    "levvel": {
+      "companyTitle": "Levvel",
+      "companyDescription": "Software Consultancy",
+      "jobTitle": "Consultant",
+      "jobDescription":
+        "Worked with clients to create effective, maintainable software solutions addressing a wide array of needs, using any technology dictated by the client or the pre-existing codebase.",
+      "jobDetails": [
+        "Gave users of an existing Ruby on Rails app the ability to plan out their sales for the upcoming financial year",
+        "Assisted in putting an authorization/permissions system over an already extensive Angular application",
+        "Worked with multiple teams using agile development and a variety of software design, testing, and code review systems"
+      ],
+      "startDate": "September 2016",
+      "endDate": "April 2017"
+    },
+    "pcls": {
+      "companyTitle": "PCLS",
+      "companyDescription": "Urine Toxicology Lab",
+      "jobTitle": "QC Metrologist",
+      "jobDescription":
+        "Responsible for a broad array of services within the QC department, including instrument maintenance and data analysis. Developed automation tools using Excel and VBA to increase department productivity.",
+      "jobDetails": [
+        "Developed an automated QC chart system in Excel, which saved over 40 employee-hours per week by automatically extracting and plotting QC data.",
+        "Created a QC checklist that flagged failed controls, and removed all copy-pasting from the analysis process.",
+        "Worked with the rest of the QC team on instrument maintenance and calibration curve analysis, ensuring quality in production"
+      ],
+      "startDate": "June 2012",
+      "endDate": "July 2016"
+    },
+    "unc": {
+      "companyTitle": "UNC",
+      "companyDescription": "University of North Carolina at Chapel Hill",
+      "jobTitle": "Lab Volunteer",
+      "jobDescription":
+        "Managed an independant research project, involving analysis of raw genotype data to meet the laboratory's broader research goals. Interwove SQL, Python, and R to produce meaningful statistics and visualizations from millions of data points.",
+      "jobDetails": [
+        "Applied various statistical techniques and algorithms to raw data from the lab's SNP microarray",
+        "Created part of the computational suite required to turn this microarray into a toolkit for determining the subspecies of mixed wild mouse populations"
+      ],
+      "startDate": "Spring 2013",
+      "endDate": "May 2014"
+    }
+  }
+}

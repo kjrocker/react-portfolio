@@ -1,0 +1,6 @@
+{
+  "siteTitle": "Kevin Rocker",
+  "siteSubtitle": "Continous Innovation",
+  "nav": { "home": "Home", "resume": "Resume" },
+  "footer": { "copyrightText": "© {{year}} - Kevin Rocker" }
+}
